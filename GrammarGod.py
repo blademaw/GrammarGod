@@ -7,7 +7,7 @@ root = Tk()
 root.geometry("700x300")
 
 # variable definitions:
-versionNumber = "0.0.1"
+versionNumber = "v0.0.1"
 root.title("GrammarGod "+versionNumber)
 dictionary = enchant.Dict("en_US")
 
@@ -47,7 +47,7 @@ titleFrame.pack(side=TOP)
 mainFrame = Frame(root, bd=4)
 mainFrame.pack(side=LEFT)
 
-Label(titleFrame, bd=4, text="Welcome to GrammarGod Version "+versionNumber+".").pack()
+Label(titleFrame, bd=4, text="Welcome to GrammarGod "+versionNumber+".").pack()
 
 Label(mainFrame, bd=2, text="Enter your text below:").pack()
 textIN = Text(mainFrame, bd=2, font=("Helvetica",10), height=5, width=50, wrap=WORD)
@@ -61,7 +61,7 @@ textOUT = Text(mainFrame, bd=4, font=("Helvetica",10), height=5, width=50, wrap=
 textOUT.pack()
 #===================================================>
 
-#Output log frame on the right hand side of the GUI
+# Output log frame on the right hand side of the GUI
 correctionsFrame = Frame(root, bd=4)
 correctionsFrame.pack(side=RIGHT)
 

@@ -71,7 +71,7 @@ textOUT.pack()
 correctionsFrame = Frame(root, bd=4)
 correctionsFrame.pack(side=RIGHT)
 
-Label(correctionsFrame, bd=2, text="Corrections made:").pack()
+Label(correctionsFrame, bd=2, text="Discrepancies:").pack()
 textCorrections = Text(correctionsFrame, bd=4, font=("Helvetica", 10),
                        height=5, width=50, wrap=WORD)
 textCorrections.pack()

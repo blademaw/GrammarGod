@@ -1,3 +1,5 @@
+# THIS WORKING VERSION WAS DEVELOPED BY JACK OLIVER AND JISHNU RAYCHAUDHURI
+
 from tkinter import *
 import enchant
 import re

@@ -37,7 +37,6 @@ def spellCheck(text):
             textToOUT += " ___"
         else:
             textToOUT += " "+word
-            pass
 
     textCorrections.insert("1.0", textCor)
     textOUT.insert("1.0", textToOUT)
@@ -75,5 +74,6 @@ Label(correctionsFrame, bd=2, text="Discrepancies:").pack()
 textCorrections = Text(correctionsFrame, bd=4, font=("Helvetica", 10),
                        height=5, width=50, wrap=WORD)
 textCorrections.pack()
+
 
 root.mainloop()

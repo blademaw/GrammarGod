@@ -10,7 +10,7 @@ root.geometry("700x300")
 
 # variable definitions:
 versionNumber = "v0.0.1"
-root.title("GrammarGod "+versionNumber)
+root.title("GrammarGod " + versionNumber)
 dictionary = enchant.Dict("en_US")
 
 # functions
@@ -34,8 +34,8 @@ def spellCheck(text):
     wordList = text.split()
     for word in wordList:
         if dictionary.check(re.sub(r"[,.;@#?!&$]+\ *", "", word)) is False:
-            textCor += (word+" → did you mean: " +
-                        ", ".join((dictionary.suggest(word)))+"?\n")
+            textCor += (word + " → did you mean: " +
+                        ", ".join((dictionary.suggest(word))) + "?\n")
             textToOUT += " ___"
         else:
             textToOUT += " "+word
